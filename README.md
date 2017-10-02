@@ -28,5 +28,12 @@ Web server Example with Basic Website
 // (3) set start script in package.json
 `    "start": "node server.js"`
 
+## Development process ##
+- set up local dev environment
+- plan your project
+- code locally
+- test locally
+- commit to git
+- push to heroku `git push heroku`
  
 
