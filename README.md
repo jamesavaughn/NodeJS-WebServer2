@@ -12,7 +12,7 @@ Web server Example with Basic Website
 ## Run instructions: ##
 
 ` $ npm install `
-` $ nodemod server.js `
+` $ npm start `
 ` Open browser to localhost:3000`
 
 ## Key topics and functions: ##
@@ -20,4 +20,13 @@ Web server Example with Basic Website
 * Middleware (hbs e.g. Handlebars)
 * Templates and Partials - dynamic website
 * Helpers
+* Heroku integration
+ // (1) set port variable
+ `const port = process.env.PORT || 3000;`
+ // (2) set environment variable for Heroku
+`app.listen(port, () => {console.log('server is up on port ${port}');});`
+// (3) set start script in package.json
+`    "start": "node server.js"`
+
+ 
 
